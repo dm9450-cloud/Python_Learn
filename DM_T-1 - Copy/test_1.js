@@ -33,7 +33,7 @@ app.post('/submit-form', async (req, res) => {
     const { groupNumber, groupName } = req.body;
 
     // File path and data to be written/appended
-    const filePath = path.join(__dirname, 'downloads', 'example.xlsx'); // Changed to save in 'downloads' folder
+    const filePath = path.join(__dirname, 'example.xlsx');
     const data = {
         groupNumber,
         groupName,

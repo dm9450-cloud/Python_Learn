@@ -1,0 +1,78 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9; /* Light grey background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for the form */
+.container {
+  background-color: #fff; /* White background for the form */
+  padding: 20px 40px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 100%;
+  max-width: 500px; /* Limit the maximum width */
+  text-align: center;
+}
+
+/* Heading styling */
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
+}
+
+/* Form label styling */
+label {
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Form input fields */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc; /* Light border color */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  background-color: #007bff; /* Primary button color */
+  color: #fff; /* White text color */
+  padding: 10px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design */
+@media 
