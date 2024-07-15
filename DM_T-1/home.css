@@ -1,0 +1,141 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the body takes up full height */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden; /* Prevent scroll */
+}
+
+/* Header Image */
+.header {
+  display: flex;
+
+}
+.header h4 {
+  justify-content: center;
+  align-items: center;
+}
+.header img {
+  width: 'auto';
+  max-height: 100px; /* Adjust this value to control the image height */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  position: relative;
+  z-index: 10;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #575757;
+}
+
+
+/* Align left items */
+nav ul .left-nav {
+  /* margin-right: auto;*/
+  float: left;
+}
+
+/* Align right items */
+nav ul .right-nav {
+  margin-left: auto;
+  margin-right: 4px;
+  /* float: right; */
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  height: calc(100vh - 150px); /* Adjust the height to fit within the viewport */
+}
+
+
+.split {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  background-color: #f1f1f1;
+}
+
+.right {
+  background-color: #ddd;
+}
+
+/* Centered Content */
+.centered {
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* Maintain aspect ratio */
+  max-height: 150px; /* Ensure the image doesn't exceed 150px in height */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.centered a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.centered a:hover {
+  background-color: #ccc;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 600px) {
+  .content {
+      flex-direction: column;
+      height: calc(100vh - 150px);
+  }
+
+  .split {
+      width: 100%;
+  }
+}
